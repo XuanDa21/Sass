@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* import global */
+/* note: priority positon */
+/* variable global */
+.box {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: orange;
+}
+
+h3 {
+  color: #333;
+  padding: 2rem 4rem;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* nested */
+.header {
+  padding: 2rem;
+  background-color: orange;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  /* header__inner */
+  /* header__inner--text*/
+}
+.header__inner {
+  color: white;
+  /* header__inner:hover */
+}
+.header__inner:hover {
+  color: wheat;
+  cursor: pointer;
+}
+.header__inner--text {
+  color: #333;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* import global */
+/* note: priority positon */
+@import './variables';
+@import './mixins';
+
+.box{
+    @include size(100px);
+    @include direction("both");
+    background-color: $main-color;
+}
+
+
+h3{
+    color: $text-color;
+    padding: 2rem 4rem;
+    background-color: $main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* nested */
+.header{
+    padding: 2rem;
+    background-color: $main-color;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    /* header__inner */
+    &__inner{
+        color: white;
+        /* header__inner:hover */
+        &:hover{
+            color: $linkHover-color;
+            cursor: pointer;
+        }
+    }
+    /* header__inner--text*/
+    &__inner--text{
+        color: $text-color;
+    }
+}
